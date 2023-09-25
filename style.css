@@ -1,0 +1,90 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set the background color */
+  body {
+    background-color: #0080c0; /* Warna biru laut */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .gambar {
+    float: left; /* Menggunakan float untuk menempatkan gambar di sebelah kiri */
+    margin-right: 20px; /* Jarak antara gambar dan elemen lainnya */
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Center the login section vertically */
+  #login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Style the container */
+  .container {
+    background-color: #fff; /* Warna latar belakang putih */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  /* Style the title */
+  .container h2 {
+    font-size: 24px;
+    color: #333; /* Warna teks hitam */
+    margin-bottom: 10px;
+  }
+  
+  /* Style the subtitle */
+  .container p {
+    font-size: 18px;
+    color: #555; /* Warna teks abu-abu */
+    margin-bottom: 20px;
+  }
+  
+  /* Style the input fields */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Warna border abu-abu */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Style the password toggle icon */
+  .toggle-password {
+    cursor: pointer;
+  }
+  
+  /* Style the login button */
+  button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #005b96, #00a8e8); /* Gradien biru laut */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Warna teks putih */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Style the login button on hover */
+  button:hover {
+    background: linear-gradient(to right, #00a8e8, #005b96); /* Gradien biru laut terbalik */
+  }
+  

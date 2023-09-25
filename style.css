@@ -10,17 +10,6 @@
     background-color: #0080c0; /* Warna biru laut */
     font-family: 'Poppins', sans-serif;
   }
-  
-  .gambar {
-    float: left; /* Menggunakan float untuk menempatkan gambar di sebelah kiri */
-    margin-right: 20px; /* Jarak antara gambar dan elemen lainnya */
-  }
-  
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
   /* Center the login section vertically */
   #login {
@@ -87,4 +76,27 @@
   button:hover {
     background: linear-gradient(to right, #00a8e8, #005b96); /* Gradien biru laut terbalik */
   }
-  
+ 
+  /* CSS untuk footer */
+  .footer {
+    background-color: #0080c0; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks footer */
+    text-align: center;
+    padding: 10px 0; /* Padding atas dan bawah untuk ruang di dalam footer */
+    width: 100%; /* Lebar footer 100% dari lebar layar */
+    position: fixed; /* Footer ditempel di bagian bawah layar */
+    bottom: 0; /* Footer di tempatkan di bagian bawah */
+    left: 0; /* Footer ditempatkan di kiri */
+  }
+
+/* Style teks copyright */
+.footer p {
+  margin: 0; /* Hapus margin bawaan */
+  font-size: 14px;
+}
+
+/* Style teks link copyright (jika diperlukan) */
+.footer a {
+  color: #fff; /* Warna teks link */
+  text-decoration: none; /* Hapus garis bawah link */
+}

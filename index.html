@@ -4,6 +4,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="SignUp-Form" />
+    <meta name="SIP3DN" content="Home" />
     <title>Selamat Datang | SIP3DN TANGSEL</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,6 +36,19 @@
   <!-- head selesai -->
   <!-- body -->
   <body>
+    <!-- header -->
+    <header>
+      <!-- Logo di atas kiri -->
+      <div class="logo-left">
+        <img src="./img/logo ukpbj tangsel.png" alt="Logo Kiri" width="100" />
+      </div>
+
+      <!-- Logo di atas kanan -->
+      <div class="logo-right">
+        <img src="logo-right.png" alt="Logo Kanan" width="100" />
+      </div>
+    </header>
+    <!-- header selesai-->
     <!-- form login-->
     <section id="login">
       <div class="container mx-auto px-2 lg:w-[60rem]">
@@ -66,14 +81,16 @@
                   </span>
                 </div>
               </div>
-              <button
-                class="py-3 px-3 bg-gradient-to-tr from-purple-600 to-indigo-400 rounded-md w-full font-poppins font-semibold text-white"
-                type="submit">
-                LOGIN
-              </button>
-              <footer>
+              <div class="button-container">
+                <button-login
+                  class="py-3 px-3 bg-gradient-to-tr from-purple-600 to-indigo-400 rounded-md w-full font-poppins font-semibold text-white"
+                  type="submit">
+                  <a href="/pages/home.html">LOGIN</a>
+                </button-login>
+              </div>
+              <footer class="fa-comment-alt">
                 Belum punya akun?, klik
-                <a href="/pages/login.html">Here</a>
+                <a href="/pages/form login/login.html">Here</a>
               </footer>
             </form>
           </div>
@@ -81,9 +98,11 @@
       </div>
     </section>
   </body>
+  <!-- footer -->
   <footer class="footer">
     <div class="container.fa-10x">
       <p>&copy; 2023 Barkomet. Hak Cipta Dilindungi Undang-Undang.</p>
     </div>
   </footer>
+  <!-- footer selesai-->
 </html>

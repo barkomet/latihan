@@ -14,6 +14,7 @@
   /* Center the login section vertically */
   #login {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -22,9 +23,9 @@
   /* Style the container */
   .container {
     background-color: #fff; /* Warna latar belakang putih */
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    padding: 70px;
     text-align: center;
     max-width: 400px;
   }
@@ -33,7 +34,7 @@
   .container h2 {
     font-size: 24px;
     color: #333; /* Warna teks hitam */
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
   /* Style the subtitle */
@@ -48,8 +49,8 @@
   input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc; /* Warna border abu-abu */
-    border-radius: 5px;
+    border: 2px solid #ccc; /* Warna border abu-abu */
+    border-radius: 10px;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
   }
@@ -57,10 +58,12 @@
   /* Style the password toggle icon */
   .toggle-password {
     cursor: pointer;
+    margin-bottom: 20px; /* Tambahkan margin bawah */
+    display: block;
   }
   
   /* Style the login button */
-  button {
+  button-login {
     width: 100%;
     padding: 10px;
     background: linear-gradient(to right, #005b96, #00a8e8); /* Gradien biru laut */
@@ -70,7 +73,32 @@
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     cursor: pointer;
+    margin: 10px;
+    margin-top: 10px;
   }
+
+  button-login a {
+    color: #fff; /* Atur warna teks tautan sesuai kebutuhan (putih) */
+    text-decoration: none; /* Hapus garis bawah tautan */
+  }
+  button-panduan {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #005b96, #00a8e8); /* Gradien biru laut */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Warna teks putih */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 10px;
+    }
+
+    button-panduan a {
+      color: #fff; /* Atur warna teks tautan sesuai kebutuhan (putih) */
+      text-decoration: none; /* Hapus garis bawah tautan */
+    }
   
   /* Style the login button on hover */
   button:hover {
@@ -99,4 +127,37 @@
 .footer a {
   color: #fff; /* Warna teks link */
   text-decoration: none; /* Hapus garis bawah link */
+}
+
+/* CSS untuk logo di atas kiri */
+.logo-left {
+  position: absolute;
+  top: 10px; /* Atur jarak dari atas */
+  left: 10px; /* Atur jarak dari kiri */
+}
+
+/* CSS untuk logo di atas kanan */
+.logo-right {
+  position: absolute;
+  top: 10px; /* Atur jarak dari atas */
+  right: 10px; /* Atur jarak dari kanan */
+}
+
+/* CSS untuk mengatur style logo (sesuaikan dengan kebutuhan) */
+.logo-left img,
+.logo-right img {
+  max-width: 100px; /* Sesuaikan ukuran logo */
+  height: auto;
+}
+
+.fa-comment-alt {
+  margin-top: 20px; /* Berikan jarak atas dari kotak login */
+  color: #555; /* Warna teks sesuai kebutuhan */
+  font-size: 14px;
+}
+
+.fa-comment-alt a {
+  color: #007bff; /* Warna tautan sesuai kebutuhan */
+  text-decoration: underline; /* Beri garis bawah pada tautan */
+  margin-left: 5px; /* Berikan jarak antara teks dan tautan */
 }

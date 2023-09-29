@@ -7,7 +7,7 @@
   
   /* Set the background color */
   body {
-    background-color: #0080c0; /* Warna biru laut */
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF); /* Warna biru laut */
     font-family: 'Poppins', sans-serif;
   }
 
@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
   }
   
   /* Style the container */
@@ -103,6 +103,8 @@
   /* Style the login button on hover */
   button:hover {
     background: linear-gradient(to right, #00a8e8, #005b96); /* Gradien biru laut terbalik */
+    
+    transition: .5s;  
   }
  
   /* CSS untuk footer */
@@ -129,26 +131,51 @@
   text-decoration: none; /* Hapus garis bawah link */
 }
 
+.box {
+  position: relative;
+  }
+
 /* CSS untuk logo di atas kiri */
-.logo-left {
+.box .logo-left {
   position: absolute;
   top: 10px; /* Atur jarak dari atas */
   left: 10px; /* Atur jarak dari kiri */
 }
 
 /* CSS untuk logo di atas kanan */
-.logo-right {
+.box .logo-right {
   position: absolute;
   top: 10px; /* Atur jarak dari atas */
   right: 10px; /* Atur jarak dari kanan */
 }
 
+.box .logo-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 /* CSS untuk mengatur style logo (sesuaikan dengan kebutuhan) */
-.logo-left img,
-.logo-right img {
+.box .logo-left img {
   max-width: 100px; /* Sesuaikan ukuran logo */
   height: auto;
+  background: #0080c0, #87CEEB;
+  transition: .5s;
 }
+.box .logo-right img {
+  max-width: 60px; /* Sesuaikan ukuran logo */
+  height: auto;
+  background: #0080c0, #87CEEB;
+  transition: .5s;
+}
+
+.box .logo-center img {
+  max-width: 60px; /* Sesuaikan ukuran logo */
+  height: auto;
+  background: #0080c0, #87CEEB;
+  transition: .5s;
+} 
 
 .fa-comment-alt {
   margin-top: 20px; /* Berikan jarak atas dari kotak login */

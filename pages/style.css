@@ -147,3 +147,36 @@
     display: block;
     /* Tampilkan nama tautan submenu */
 }
+
+/* Gaya konten utama */
+.main-content {
+    margin-left: 260px; /* Sesuaikan margin kiri dengan lebar sidebar */
+    padding: 20px; /* Tambahkan padding sesuai kebutuhan */
+}
+
+/* Gaya header konten utama */
+.main-content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Tambahkan margin bawah sesuai kebutuhan */
+}
+
+/* Gaya judul konten utama */
+.main-content h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Gaya konten utama */
+.main-content main {
+    background: #fff; /* Warna latar belakang sesuai kebutuhan */
+    padding: 20px; /* Tambahkan padding sesuai kebutuhan */
+    border-radius: 6px; /* Tambahkan border-radius sesuai kebutuhan */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan shadow sesuai kebutuhan */
+}
+
+/* Gaya isi konten */
+.main-content .content {
+    /* Tambahkan gaya sesuai kebutuhan */
+}
